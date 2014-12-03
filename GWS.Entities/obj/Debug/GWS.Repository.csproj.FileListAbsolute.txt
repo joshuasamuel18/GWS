@@ -1,0 +1,13 @@
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\GWS.Repository.dll
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\GWS.Repository.pdb
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\FluentNHibernate.dll
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\GWS.Domain.dll
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\GWS.Hibernate.dll
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\NHibernate.dll
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\GWS.Domain.pdb
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\GWS.Hibernate.pdb
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\FluentNHibernate.xml
+D:\Working Folder\GWS\GWS.Entities\bin\Debug\NHibernate.xml
+D:\Working Folder\GWS\GWS.Entities\obj\Debug\GWS.Repository.csprojResolveAssemblyReference.cache
+D:\Working Folder\GWS\GWS.Entities\obj\Debug\GWS.Repository.dll
+D:\Working Folder\GWS\GWS.Entities\obj\Debug\GWS.Repository.pdb

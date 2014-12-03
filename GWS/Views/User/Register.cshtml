@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="UserManagerApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/Moderators/UserManager.js"></script>
+    <script src="~/Scripts/toastr.js"></script>
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />    
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div ng-controller="UserManagerCtrl">
+        <form novalidate name="RegisterForm" ng-cloak class="ng-cloak" id="FrmRC">
+            <table>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" ng-model="name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="text" ng-model="email" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <input type="button" value="Submit" ng-click="Register()" />
+        </form>
+    </div>
+</body>
+</html>

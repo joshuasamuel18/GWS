@@ -1,0 +1,4 @@
+D:\Working Folder\GWS\GWS.Domain\bin\Debug\GWS.Domain.dll
+D:\Working Folder\GWS\GWS.Domain\bin\Debug\GWS.Domain.pdb
+D:\Working Folder\GWS\GWS.Domain\obj\Debug\GWS.Domain.dll
+D:\Working Folder\GWS\GWS.Domain\obj\Debug\GWS.Domain.pdb
