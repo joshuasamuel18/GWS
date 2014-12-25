@@ -1,0 +1,43 @@
+﻿@model GWS.Models.tblLogin
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tblLogin</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsrId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsrId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsrName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsrName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country.CountryName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country.CountryName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

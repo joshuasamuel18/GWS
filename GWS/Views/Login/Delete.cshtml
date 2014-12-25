@@ -1,0 +1,46 @@
+﻿@model GWS.Models.tblLogin
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>tblLogin</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsrId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsrId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsrName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsrName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country.CountryName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country.CountryName)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
