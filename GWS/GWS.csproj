@@ -64,6 +64,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -191,11 +193,48 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserRegistrationController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Car.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarMake.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Country.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GWSModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GWSModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GWSModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GWSModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GWSModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Student.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblLogin.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\userinfo.cs">
+      <DependentUpon>GWSModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -331,6 +370,45 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User\Register.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\GWSModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GWSModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\GWSModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GWSModel.edmx</DependentUpon>
+      <LastGenOutput>GWSModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GWSModel.edmx.diagram">
+      <DependentUpon>GWSModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\GWSModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GWSModel.edmx</DependentUpon>
+      <LastGenOutput>GWSModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserRegistration\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserRegistration\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserRegistration\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserRegistration\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserRegistration\Delete.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

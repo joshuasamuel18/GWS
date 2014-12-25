@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GWSContext" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DB_JoshuaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="GWSContext.Car" />
+    <EntitySet Name="CarMakes" EntityType="GWSContext.CarMake" />
+    <EntitySet Name="Countries" EntityType="GWSContext.Country" />
+    <EntitySet Name="Students" EntityType="GWSContext.Student" />
+    <EntitySet Name="sysdiagrams" EntityType="GWSContext.sysdiagram" />
+    <EntitySet Name="tblLogins" EntityType="GWSContext.tblLogin" />
+    <EntitySet Name="userinfoes" EntityType="GWSContext.userinfo" />
+    <AssociationSet Name="FK_Car_CarMake" Association="GWSContext.FK_Car_CarMake">
+      <End Role="CarMake" EntitySet="CarMakes" />
+      <End Role="Car" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarMake_Country" Association="GWSContext.FK_CarMake_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="CarMake" EntitySet="CarMakes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLogin_Country" Association="GWSContext.FK_tblLogin_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="tblLogin" EntitySet="tblLogins" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Make_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CarMake" Relationship="GWSContext.FK_Car_CarMake" FromRole="Car" ToRole="CarMake" />
+  </EntityType>
+  <EntityType Name="CarMake">
+    <Key>
+      <PropertyRef Name="Make_Id" />
+    </Key>
+    <Property Name="Make_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country_Id" Type="Int32" />
+    <NavigationProperty Name="Cars" Relationship="GWSContext.FK_Car_CarMake" FromRole="CarMake" ToRole="Car" />
+    <NavigationProperty Name="Country" Relationship="GWSContext.FK_CarMake_Country" FromRole="CarMake" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Country_Id" />
+    </Key>
+    <Property Name="Country_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CarMakes" Relationship="GWSContext.FK_CarMake_Country" FromRole="Country" ToRole="CarMake" />
+    <NavigationProperty Name="tblLogins" Relationship="GWSContext.FK_tblLogin_Country" FromRole="Country" ToRole="tblLogin" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Age" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="bActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblLogin">
+    <Key>
+      <PropertyRef Name="UsrId" />
+    </Key>
+    <Property Name="UsrId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsrName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CountryCode" Type="Int32" />
+    <NavigationProperty Name="Country" Relationship="GWSContext.FK_tblLogin_Country" FromRole="tblLogin" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="emailid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="phoneno" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_Car_CarMake">
+    <End Role="CarMake" Type="GWSContext.CarMake" Multiplicity="1" />
+    <End Role="Car" Type="GWSContext.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarMake">
+        <PropertyRef Name="Make_Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="Make_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarMake_Country">
+    <End Role="Country" Type="GWSContext.Country" Multiplicity="0..1" />
+    <End Role="CarMake" Type="GWSContext.CarMake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_Id" />
+      </Principal>
+      <Dependent Role="CarMake">
+        <PropertyRef Name="Country_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLogin_Country">
+    <End Role="Country" Type="GWSContext.Country" Multiplicity="0..1" />
+    <End Role="tblLogin" Type="GWSContext.tblLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_Id" />
+      </Principal>
+      <Dependent Role="tblLogin">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

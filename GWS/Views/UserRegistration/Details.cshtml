@@ -1,0 +1,64 @@
+﻿@model GWS.Models.userinfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>userinfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.emailid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.emailid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.phoneno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phoneno)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

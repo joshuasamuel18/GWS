@@ -2,3 +2,13 @@ D:\Working Folder\GWS\GWS.Domain\bin\Debug\GWS.Domain.dll
 D:\Working Folder\GWS\GWS.Domain\bin\Debug\GWS.Domain.pdb
 D:\Working Folder\GWS\GWS.Domain\obj\Debug\GWS.Domain.dll
 D:\Working Folder\GWS\GWS.Domain\obj\Debug\GWS.Domain.pdb
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\GWS.Domain.dll
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\GWS.Domain.pdb
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\FluentNHibernate.dll
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\Iesi.Collections.dll
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\NHibernate.dll
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\FluentNHibernate.xml
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\Iesi.Collections.xml
+D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\NHibernate.xml
+D:\Tanker Pacific\GWS\GWS.Domain\obj\Debug\GWS.Domain.dll
+D:\Tanker Pacific\GWS\GWS.Domain\obj\Debug\GWS.Domain.pdb

@@ -30,7 +30,7 @@ namespace GWS.Hibernate
                 Configuration cfg = null;
                 cfg = Fluently.Configure()
                         .Database(MsSqlConfiguration.MsSql2008.ConnectionString(
-                        "Server=aes143\\sqlexpress;Database=DB_Joshua;User Id=joshua;Password=joshua;").ShowSql())                    
+                        @"Server=HAILMARY\HAILMARY;Database=DB_Joshua;User Id=test;Password=test;").ShowSql())                    
                    /* .ExposeConfiguration(
                         c =>
                         {

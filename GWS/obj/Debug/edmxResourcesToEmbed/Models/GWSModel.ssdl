@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GWSContext.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="GWSContextStoreContainer">
+    <EntitySet Name="Car" EntityType="GWSContext.Store.Car" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CarMake" EntityType="GWSContext.Store.CarMake" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Country" EntityType="GWSContext.Store.Country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Student" EntityType="GWSContext.Store.Student" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="GWSContext.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblLogin" EntityType="GWSContext.Store.tblLogin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="userinfo" EntityType="GWSContext.Store.userinfo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Car_CarMake" Association="GWSContext.Store.FK_Car_CarMake">
+      <End Role="CarMake" EntitySet="CarMake" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarMake_Country" Association="GWSContext.Store.FK_CarMake_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="CarMake" EntitySet="CarMake" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLogin_Country" Association="GWSContext.Store.FK_tblLogin_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="tblLogin" EntitySet="tblLogin" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Make_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CarMake">
+    <Key>
+      <PropertyRef Name="Make_Id" />
+    </Key>
+    <Property Name="Make_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="varchar" MaxLength="50" />
+    <Property Name="Country_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Country_Id" />
+    </Key>
+    <Property Name="Country_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Age" Type="varchar" MaxLength="10" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="bActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblLogin">
+    <Key>
+      <PropertyRef Name="UsrId" />
+    </Key>
+    <Property Name="UsrId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UsrName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="CountryCode" Type="int" />
+  </EntityType>
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="emailid" Type="varchar" MaxLength="50" />
+    <Property Name="phoneno" Type="varchar" MaxLength="50" />
+    <Property Name="username" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <Association Name="FK_Car_CarMake">
+    <End Role="CarMake" Type="GWSContext.Store.CarMake" Multiplicity="1" />
+    <End Role="Car" Type="GWSContext.Store.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarMake">
+        <PropertyRef Name="Make_Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="Make_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarMake_Country">
+    <End Role="Country" Type="GWSContext.Store.Country" Multiplicity="0..1" />
+    <End Role="CarMake" Type="GWSContext.Store.CarMake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_Id" />
+      </Principal>
+      <Dependent Role="CarMake">
+        <PropertyRef Name="Country_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLogin_Country">
+    <End Role="Country" Type="GWSContext.Store.Country" Multiplicity="0..1" />
+    <End Role="tblLogin" Type="GWSContext.Store.tblLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_Id" />
+      </Principal>
+      <Dependent Role="tblLogin">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

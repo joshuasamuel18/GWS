@@ -9,3 +9,16 @@ D:\Working Folder\GWS\GWS.Hibernate\bin\Debug\NHibernate.xml
 D:\Working Folder\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.csprojResolveAssemblyReference.cache
 D:\Working Folder\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.dll
 D:\Working Folder\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.pdb
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\GWS.Hibernate.dll
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\GWS.Hibernate.pdb
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\FluentNHibernate.dll
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\GWS.Domain.dll
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\Iesi.Collections.dll
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\NHibernate.dll
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\GWS.Domain.pdb
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\FluentNHibernate.xml
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\Iesi.Collections.xml
+D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\NHibernate.xml
+D:\Tanker Pacific\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.csprojResolveAssemblyReference.cache
+D:\Tanker Pacific\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.dll
+D:\Tanker Pacific\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.pdb
