@@ -26,3 +26,21 @@ D:\Tanker Pacific\GWS\GWS.Entities\bin\Debug\NHibernate.xml
 D:\Tanker Pacific\GWS\GWS.Entities\obj\Debug\GWS.Repository.csprojResolveAssemblyReference.cache
 D:\Tanker Pacific\GWS\GWS.Entities\obj\Debug\GWS.Repository.dll
 D:\Tanker Pacific\GWS\GWS.Entities\obj\Debug\GWS.Repository.pdb
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Repository.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Repository.pdb
+E:\GitHub\GWS\GWS.Entities\bin\Debug\FluentNHibernate.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Domain.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Hibernate.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\Iesi.Collections.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\NHibernate.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Domain.pdb
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Hibernate.pdb
+E:\GitHub\GWS\GWS.Entities\bin\Debug\FluentNHibernate.xml
+E:\GitHub\GWS\GWS.Entities\bin\Debug\Iesi.Collections.xml
+E:\GitHub\GWS\GWS.Entities\bin\Debug\NHibernate.xml
+E:\GitHub\GWS\GWS.Entities\obj\Debug\GWS.Repository.csprojResolveAssemblyReference.cache
+E:\GitHub\GWS\GWS.Entities\obj\Debug\GWS.Repository.dll
+E:\GitHub\GWS\GWS.Entities\obj\Debug\GWS.Repository.pdb
+E:\GitHub\GWS\GWS.Entities\bin\Debug\GWS.Repository.dll.config
+E:\GitHub\GWS\GWS.Entities\bin\Debug\EntityFramework.dll
+E:\GitHub\GWS\GWS.Entities\bin\Debug\EntityFramework.xml

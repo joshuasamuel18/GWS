@@ -197,46 +197,11 @@
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UserRegistrationController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Filters\SampleActionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\Car.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CarMake.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Country.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GWSModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GWSModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GWSModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GWSModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GWSModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Student.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblLogin.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\userinfo.cs">
-      <DependentUpon>GWSModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -374,27 +339,6 @@
     <Content Include="Views\User\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\GWSModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GWSModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Models\GWSModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GWSModel.edmx</DependentUpon>
-      <LastGenOutput>GWSModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\GWSModel.edmx.diagram">
-      <DependentUpon>GWSModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\GWSModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GWSModel.edmx</DependentUpon>
-      <LastGenOutput>GWSModel.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -413,21 +357,6 @@
     <Content Include="Views\UserRegistration\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Car\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Car\Details.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Car\Create.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Car\Edit.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Car\Delete.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -441,6 +370,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Login\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Car\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Test.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -456,12 +391,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61543</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/GWS</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

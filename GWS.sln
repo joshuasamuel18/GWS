@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GWS.Repository", "GWS.Entit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GWS.Dependency", "GWS.Dependency\GWS.Dependency.csproj", "{FB52C735-1B43-471B-B4C1-BF26FA709E0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GWS.EF", "GWS.EF\GWS.EF.csproj", "{80A1E129-9C8E-4C62-BCEE-ACE1E7D30789}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FB52C735-1B43-471B-B4C1-BF26FA709E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB52C735-1B43-471B-B4C1-BF26FA709E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB52C735-1B43-471B-B4C1-BF26FA709E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A1E129-9C8E-4C62-BCEE-ACE1E7D30789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A1E129-9C8E-4C62-BCEE-ACE1E7D30789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A1E129-9C8E-4C62-BCEE-ACE1E7D30789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A1E129-9C8E-4C62-BCEE-ACE1E7D30789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

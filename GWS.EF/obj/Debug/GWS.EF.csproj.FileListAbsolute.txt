@@ -1,0 +1,8 @@
+E:\GitHub\GWS\GWS.EF\bin\Debug\GWS.EF.dll.config
+E:\GitHub\GWS\GWS.EF\bin\Debug\GWS.EF.dll
+E:\GitHub\GWS\GWS.EF\bin\Debug\GWS.EF.pdb
+E:\GitHub\GWS\GWS.EF\bin\Debug\EntityFramework.dll
+E:\GitHub\GWS\GWS.EF\bin\Debug\EntityFramework.xml
+E:\GitHub\GWS\GWS.EF\obj\Debug\GWS.EF.csprojResolveAssemblyReference.cache
+E:\GitHub\GWS\GWS.EF\obj\Debug\GWS.EF.dll
+E:\GitHub\GWS\GWS.EF\obj\Debug\GWS.EF.pdb

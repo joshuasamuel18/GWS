@@ -22,3 +22,16 @@ D:\Tanker Pacific\GWS\GWS.Hibernate\bin\Debug\NHibernate.xml
 D:\Tanker Pacific\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.csprojResolveAssemblyReference.cache
 D:\Tanker Pacific\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.dll
 D:\Tanker Pacific\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.pdb
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\GWS.Hibernate.dll
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\GWS.Hibernate.pdb
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\FluentNHibernate.dll
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\GWS.Domain.dll
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\Iesi.Collections.dll
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\NHibernate.dll
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\GWS.Domain.pdb
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\FluentNHibernate.xml
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\Iesi.Collections.xml
+E:\GitHub\GWS\GWS.Hibernate\bin\Debug\NHibernate.xml
+E:\GitHub\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.csprojResolveAssemblyReference.cache
+E:\GitHub\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.dll
+E:\GitHub\GWS\GWS.Hibernate\obj\Debug\GWS.Hibernate.pdb

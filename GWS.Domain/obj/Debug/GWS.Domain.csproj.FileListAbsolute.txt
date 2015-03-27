@@ -12,3 +12,14 @@ D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\Iesi.Collections.xml
 D:\Tanker Pacific\GWS\GWS.Domain\bin\Debug\NHibernate.xml
 D:\Tanker Pacific\GWS\GWS.Domain\obj\Debug\GWS.Domain.dll
 D:\Tanker Pacific\GWS\GWS.Domain\obj\Debug\GWS.Domain.pdb
+E:\GitHub\GWS\GWS.Domain\bin\Debug\GWS.Domain.dll
+E:\GitHub\GWS\GWS.Domain\bin\Debug\GWS.Domain.pdb
+E:\GitHub\GWS\GWS.Domain\bin\Debug\FluentNHibernate.dll
+E:\GitHub\GWS\GWS.Domain\bin\Debug\Iesi.Collections.dll
+E:\GitHub\GWS\GWS.Domain\bin\Debug\NHibernate.dll
+E:\GitHub\GWS\GWS.Domain\bin\Debug\FluentNHibernate.xml
+E:\GitHub\GWS\GWS.Domain\bin\Debug\Iesi.Collections.xml
+E:\GitHub\GWS\GWS.Domain\bin\Debug\NHibernate.xml
+E:\GitHub\GWS\GWS.Domain\obj\Debug\GWS.Domain.csprojResolveAssemblyReference.cache
+E:\GitHub\GWS\GWS.Domain\obj\Debug\GWS.Domain.dll
+E:\GitHub\GWS\GWS.Domain\obj\Debug\GWS.Domain.pdb
